@@ -19,3 +19,4 @@ albumentations==0.4.6
 pathspec
 ptflops
 numpy==1.21.1
+ultralytics
