@@ -210,10 +210,7 @@ def is_likely_front_car(x1, y1, x2, y2, img_shape, y_thresh_ratio=0.5, w_thresh_
     H, W = img_shape[:2]
     w = x2 - x1
     h = y2 - y1
-
-    if y1 > int(y_thresh_ratio * H):
-        return True
-    if w > int(w_thresh_ratio * W) or h > int(h_thresh_ratio * H):
+    if w > int(w_thresh_ratio * W):
         return True
     return False
 
